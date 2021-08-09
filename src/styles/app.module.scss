@@ -1,0 +1,83 @@
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, var(--soft-violet), var(--soft-blue));
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  overflow-y: hidden;
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0 hsl(240, 5%, 91%);
+  width: 56rem;
+  height: 28rem;
+}
+
+.imageContainer {
+  img {
+    overflow: hidden;
+  }
+
+  :nth-child(1) {
+    z-index: 1;
+    margin: -12rem 1.5rem -24.3rem -4.8rem;
+    position:static;
+    height: 21.3rem;
+  }
+
+  :nth-child(2) {
+    z-index: 3;
+    margin: 1rem 6rem 4rem -6.6rem;
+    position:static;
+    height: 11rem;
+  }
+
+  :nth-child(3) {
+    width: 30rem;
+    margin-left: -18rem;
+    margin-bottom: -5rem;
+    z-index: 2;
+  }
+}
+
+.faqContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  width: 98%;
+
+  h1 {
+    align-self: flex-start;
+    color: var(--desaturated-blue);
+    font-family: 'STIX Two Text', serif;
+    font-size: 2.25rem;
+    margin-left: 2rem;
+    padding-top: 3.7rem;
+  }
+}
+
+.textContainer {
+  padding: 1.5rem 2rem;
+  width: 26.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background-color: var(--light-grayish-blue);
+  padding: 0.3rem;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+

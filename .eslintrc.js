@@ -1,8 +1,9 @@
 module.exports = {
   env: {
+    node: true,
     browser: true,
-    es2021: true,
-    jest: true,
+    commonjs: true,
+    amd: true,
   },
   parser: 'babel-eslint',
   extends: [

@@ -44,3 +44,61 @@ Background gradient:
 
 - Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
 - Weights: 400, 700
+
+
+
+# SCSS
+
+```scss
+$backgroundColor: #fff;
+$black: #000;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@mixin horizontal-list {
+	list-style: none;
+	display: flex;
+
+	li {
+			padding: 7px 14px;
+		}
+}
+// Para a utilização o @mixin basta atribuir o nome do mixin em um @include
+
+#app {
+	background-color: $backgroundColor;
+	color: coral;
+	width: 100vw;
+	height: 100vh;
+	padding: 24px;
+
+
+	h1 {
+		font-size: 24px;
+		font-weight: 600;
+		// utilização do rgba no css padrão
+		// background-color: rgba(0, 0, 0, 0.1);
+		background-color: rgba($black, 0.1);
+		padding: 24px;
+
+		@media screen and (min-width: 560px) {
+			font-size: 48px;
+		}
+	}
+
+	nav ul {
+		background-color: rgba(peachpuff, .4);
+		@include horizontal-list;
+	}
+
+	.breadcrumb ul {
+		background-color: rgba(#0099ff, .1);
+		@include horizontal-list;
+	}
+
+}
+```
